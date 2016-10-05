@@ -8,7 +8,36 @@
   </head>
   <body>
 
-    <h1>Hello World!</h1>
+    <h1>Etsy baby!</h1>
+
+    <div class="container">
+          <ul class="etsy-products">
+            <!-- Handlebars template for character -->
+          </ul>
+    </div>
+
+    <script id="character-template" type="text/x-handlebars-template">
+      <div class="col-md-6">
+        <div class="item-card">
+          <div class="item-placeholder">
+            <div class="placeholder-content">
+              <img src="{{images.0.}}" alt="">
+            </div>
+          </div>
+          <div class="meta-data">
+            <div class="row item-title">{{title}}</div>
+            <div class="row store-price">
+              <div class="store">{{Shop.shop_name}}</div>
+              <div class="price">{{price}}</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </script>
+
+
 
     <script src="js/bundle.js"></script>
   </body>
