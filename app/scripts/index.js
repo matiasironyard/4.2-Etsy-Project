@@ -9,7 +9,24 @@ var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbt
 
 function logData(data) {
         console.log(data);
+        var etsyData = data.results;
+        etsyProducts(etsyData);
       }
+
+      function etsyProducts(productList){
+        console.log(etsyProducts);
+        var source = $('#product-template').html();
+        var productTemplate = handlebars.compile(source);
+
+
+        _.each(productList, function(etsyData){
+          var $etsyDataHtml = $(productTemplate(etsyData));
+          $('.etsy-products').append($etsyDataHtml);
+
+        });
+
+      }
+
 
 
 
