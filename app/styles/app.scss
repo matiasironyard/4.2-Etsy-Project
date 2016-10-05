@@ -11,25 +11,60 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 *::after {
   box-sizing: border-box;
 }
-.placeholder-content{
-  width: 223px;
-  height: 177px;
-  overflow: hidden;
 
-}
-
-img {
-  // width: 100%;
-  // height: 177px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  float: left;
-
+.container{
+  background-color: #F5F5F1;
 }
 
 .item-card{
-  height: 223px;
-  width: 223px;
+  height: 225px;
+  width: 225px;
   overflow: hidden;
+  box-shadow: 2px 2px 1px #888888;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.placeholder-content{
+  position: relative;
+   overflow: hidden;
+   padding-bottom: 80%;
+}
+
+img {
+  width: 225px;
+  height: 177px;
+  position: absolute;
+  margin: auto;
+}
+
+.item-title{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.meta-data{
+  background-color: #ffffff;
+}
+
+.store-price span{
+  padding-left: 10px;
+}
+.store{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #9A9A9A;
+}
+
+.price{
+  float: right;
+  padding-right: 10px;
+  color: #78C042;
 }

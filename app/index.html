@@ -17,7 +17,7 @@
     </div>
 
     <script id="product-template" type="text/x-handlebars-template">
-      <div class="col-md-3">
+      <div class="col-md-3 col-xs-6">
         <div class="item-card">
           <div class="item-placeholder">
             <div class="placeholder-content">
@@ -25,10 +25,10 @@
             </div>
           </div>
           <div class="meta-data">
-            <div class="item-title">{{title}}</div>
+            <p class="item-title">{{title}}</p>
             <div class="store-price">
-              <div class="store">{{Shop.shop_name}}</div>
-              <div class="price">{{price}}</div>
+              <span class="store">{{Shop.shop_name}}</span>
+              <span class="price">${{price}}</span>
             </div>
 
           </div>
