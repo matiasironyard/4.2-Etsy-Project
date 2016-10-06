@@ -17,25 +17,60 @@ ul{
   list-style: none;
 }
 
+// containers
+
 .container{
-  width: 70%;
+  width: 90%;
   background-color: #F5F5F1;
+}
+.items-container-window{
   float: right;
 }
 
-.column{
+header{
+  background-color: #ffffff;
+}
+
+// menus
+.sub-nav-row{
+  height: 45px;
+  border-top: 1px solid #E1E3DF;
+  box-shadow: 1px 5px 20px -8px black;
+  background-color: #ffffff;
+}
+
+.main-content-row{
+  margin-top: 30px;
+}
+
+
+.cat-nav-butn{
+  display: inline-flex;
+  white-space: nowrap;
+  height: 45px;
+  width: 10%;
+  padding-top: 10px;
+  text-align: center;
+}
+
+
+.aside{
 position: relative;
-    float: left;
+float: left;
   }
 .item-card{
   // height: 225px;
   width: 100%;
   overflow: hidden;
-  box-shadow: 2px 2px 1px #888888;
+  box-shadow: 1px 1px 1px #888888;
   margin-right: 20px;
   margin-bottom: 15px;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: #ffffff;
+  &:hover{
+    box-shadow: 2px 2px 1px #888888;
+
+  }
 }
 
 .placeholder-content{

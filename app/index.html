@@ -12,10 +12,11 @@
 <!-- header here -->
 
 <div class="container main">
-    <header class="top-nav-bar">
+
+    <header class="row top-nav-bar">
       <div class="col-xs-12">
         <div id="etsy-log">
-          <img src="app/images/etsyicon.jpg" alt="Etsy Logo">
+          <!-- <img src="#" alt="Etsy Logo"> -->
         </div>
         <div class="search-box">
           search box
@@ -35,27 +36,26 @@
 
 
 <!-- sub-menu -->
+<div class="row sub-nav-row">
 
-    <div class="sub-navs">
-      <nav class="col-xs-12 category-nav">
-        <ul class="catergory-nav-menu">
-          <li id="clothing-and-acc">Clothing &#38 Accessories</li>
-          <li id="jewelry">Jewelry</li>
-          <li id="craft-supplies-tools">Craft Supplies &#38 Tools</li>
-          <li id="weddings">Weddings</li>
-          <li id="entertainment">Entertainment</li>
-          <li id="home-and-living">Home &#38 Living</li>
-          <li id="kids-and-baby">Kids &#38 Baby</li>
-          <li id="vintage">Vintage</li>
-        </ul>
-      </nav>
-    </div>
+      <div class="col-md-12 category-nav">
+          <span id="clothing-and-acc" class="col-md-1 cat-nav-butn">Clothing  &#38 Accessories</span>
+          <span id="jewelry" class="col-md-1 cat-nav-butn">Jewelry</span>
+          <span id="craft-supplies-tools" class="col-md-1 cat-nav-butn">Craft Supplies &#38 Tools</span>
+          <span id="weddings" class="col-md-1 cat-nav-butn">Weddings</span>
+          <span id="entertainment" class="col-md-1 cat-nav-butn">Entertainment</span>
+          <span id="home-and-living" class="col-md-1 cat-nav-butn">Home &#38 Living</span>
+          <span id="kids-and-baby" class="col-md-1 cat-nav-butn">Kids &#38 Baby</span>
+          <span id="vintage" class="col-md-1 cat-nav-butn">Vintage</span>
+      </div>
 
+</div>
 <!-- submenue-end -->
 
 <!-- aside -->
 <!-- categories -->
-    <aside class="col-md-2">
+<div class="row main-content-row">
+    <div class="col-md-2">
       <div class="all-categories-drop-bar">
       <div class="show-results-for">Show results for:</div>
       <div class="all-categories-bar-window">
@@ -130,18 +130,21 @@
           dropdown menue
         </div>
       </div>
-    </aside>
+    </div>
 
 <!-- left-search-windows-end-->
 <!-- aside-ends -->
 
 <!-- template-container -->
-    <section class="container">
+<div class="col-md-10 items-container-window">
+    <section class="items-container">
           <div class="etsy-products">
             <!-- Handlebars template for character -->
           </div>
     </section>
+</div>
 <!-- template-container-end-->
+</div>
 
 
 
@@ -154,7 +157,7 @@
 
 
     <script id="product-template" type="text/x-handlebars-template">
-      <div class="col-md-3 col-s-3 col-xs-3 column">
+      <a class="col-md-3 col-s-3 col-xs-3 column">
         <div class="item-card">
           <div class="item-placeholder">
             <div class="placeholder-content">
@@ -170,7 +173,7 @@
 
           </div>
         </div>
-      </div>
+      </a>
 
     </script>
 
