@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 2 etsy project</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+<!-- header here -->
+
+<div class="container main">
+
+    <header class="row top-nav-bar">
+      <div class="col-xs-12">
+        <div id="etsy-log">
+          <!-- <img src="#" alt="Etsy Logo"> -->
+        </div>
+        <div class="search-box">
+          search box
+        </div>
+        <ul class="account-nav">
+          <li class="sell-on-etsy"><a href="">Sell on Etsy</a></li>
+          <li class="register"><a href="">Register</a></li>
+          <li class="sing-in-link"><a href="">Sign-in</a></li>
+          <li class="cart"><a href=""><span class="cart-icon"></span><span class="cart-text">Cart</span></a></li>
+        </ul>
+      </div>
+    </header>
+
+<!-- header-end -->
+
+<!-- main -->
+
+
+<!-- sub-menu -->
+<div class="row sub-nav-row">
+
+      <div class="col-md-12 category-nav">
+          <span id="clothing-and-acc" class="col-md-1 cat-nav-butn">Clothing  &#38 Accessories</span>
+          <span id="jewelry" class="col-md-1 cat-nav-butn">Jewelry</span>
+          <span id="craft-supplies-tools" class="col-md-1 cat-nav-butn">Craft Supplies &#38 Tools</span>
+          <span id="weddings" class="col-md-1 cat-nav-butn">Weddings</span>
+          <span id="entertainment" class="col-md-1 cat-nav-butn">Entertainment</span>
+          <span id="home-and-living" class="col-md-1 cat-nav-butn">Home &#38 Living</span>
+          <span id="kids-and-baby" class="col-md-1 cat-nav-butn">Kids &#38 Baby</span>
+          <span id="vintage" class="col-md-1 cat-nav-butn">Vintage</span>
+      </div>
+
+</div>
+<!-- submenue-end -->
+
+<!-- aside -->
+<!-- categories -->
+<div class="row main-content-row">
+    <div class="col-md-2">
+      <div class="all-categories-drop-bar">
+      <div class="show-results-for">Show results for:</div>
+      <div class="all-categories-bar-window">
+        <div>All categories</div>
+        <div class="all-categories">
+          <ul class="categories">
+            <li>Clothing</li>
+            <li>Papery &#38 Party Supplies</li>
+            <li>Home &#38 Living</li>
+            <li>Art &#38 Collectibles</li>
+            <li>Jewelry</li>
+            <li>Accessories</li>
+            <li>Craft Supplies &#38 Tools</li>
+            <li>Bags &#38 Purses</li>
+            <li>Electronics &#38 Accessories</li>
+            <li>Toys &#38 Games</li>
+            <li>Books, Movies &#38 Music</li>
+            <li>Pet Supplies</li>
+            <li>Bath &#38 Beauty</li>
+            <li>Weddings</li>
+            <li>Shoes</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+<!-- categories end -->
+
+<!-- left-search-windows -->
+
+      <div class="refine-search-drop-bar">
+        <div>Refine your search</div>
+      <div class="shop-your-location">Shop cocation</div>
+      <div class="shop-location-bar-window">
+       <div class="shoplocationradios">
+         radio buttons here
+       </div>
+       <div class="high-to-low">
+         <div class="low">Low</div>
+         <div>to</div>
+         <div class="high">High</div>
+       </div>
+      </div>
+      </div>
+      <div class="divider-sm"></div>
+      <div class="filter-by-color">
+        <div>Filter by color</div>
+        <div class="colorboxes">
+          <div class="col-xs-12">
+            <div class="col-xs-1 red">r</div>
+            <div class="col-xs-1 orange">o</div>
+            <div class="col-xs-1 yellow">y</div>
+            <div class="col-xs-1 green">g</div>
+            <div class="col-xs-1 blue">b</div>
+            <div class="col-xs-1 purple">p</div>
+            <div class="col-xs-1 black">b</div>
+            <div class="col-xs-1 white">w</div>
+          </div>
+        </div>
+      </div>
+      <div class="divider-sm"></div>
+      <div class="ordering-options">
+        <div class="ordering option title">Ordering Options</div>
+        <div class="order options check boxes">
+          check boxes here
+        </div>
+      </div>
+      <div class="divider-md"></div>
+      <div class="divider-sm"></div>
+      <div class="ship to window">
+        <div class="ship-to">Ship to</div>
+        <div class="ship-to-dropdown">
+          dropdown menue
+        </div>
+      </div>
+    </div>
+
+<!-- left-search-windows-end-->
+<!-- aside-ends -->
+
+<!-- template-container -->
+<div class="col-md-10 items-container-window">
+    <section class="items-container">
+          <div class="etsy-products">
+            <!-- Handlebars template for character -->
+          </div>
+    </section>
+</div>
+<!-- template-container-end-->
+</div>
+
+
+
+
+
+
+<!-- main-ends -->
+</div>
+<!-- main-ends -->
+
+
+    <script id="product-template" type="text/x-handlebars-template">
+      <a class="col-md-3 col-s-3 col-xs-3 column">
+        <div class="item-card">
+          <div class="item-placeholder">
+            <div class="placeholder-content">
+              <img src="{{Images.0.url_570xN}}" alt="">
+            </div>
+          </div>
+          <div class="meta-data">
+            <p class="item-title">{{title}}</p>
+            <div class="store-price">
+              <span class="store">{{Shop.shop_name}}</span>
+              <span class="price">${{price}}</span>
+            </div>
+
+          </div>
+        </div>
+      </a>
+
+    </script>
+
+
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
